@@ -87,9 +87,10 @@ def add_review(request):
     if not request.user.is_anonymous:
         try:
             return JsonResponse({"status": 200})
-        except Exception as e:  # Use a more specific exception type if possible
+        except Exception as e:
             logger.error(f"Error posting review: {str(e)}")
-            return JsonResponse({"status": 401, "message": "Error in posting review"})
+            return JsonResponse(
+                {"status": 401, "message": "Error in posting review"})
     return JsonResponse({"status": 403, "message": "Unauthorized"})
 
 
@@ -97,5 +98,7 @@ def get_cars(request):
     if CarMake.objects.count() == 0:
         initiate()
     car_models = CarModel.objects.select_related('car_make').all()
-    cars = [{"CarModel": car.name, "CarMake": car.car_make.name} for car in car_models]
+    cars = [
+        {"CarModel": car.name,
+         "CarMake": car.car_make.name} for car in car_models]
     return JsonResponse({"CarModels": cars})

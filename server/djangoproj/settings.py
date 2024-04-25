@@ -16,17 +16,21 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# pylint: disable=line-too-long
 SECRET_KEY = 'django-insecure-ccow$tz_=9%dxu4(0%^(z%nx32#s@(zt9$ih@)5l54yny)wm-0'
+# pylint: enable=line-too-long
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# pylint: disable=line-too-long
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost',
     'https://erikcfch-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
 ]
+# pylint: enable=line-too-long
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
@@ -60,7 +64,7 @@ TEMPLATES = [
             BASE_DIR / 'frontend/static',
             BASE_DIR / 'frontend/build',
             BASE_DIR / 'frontend/build/static',
-            ],
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,6 +86,7 @@ DATABASES = {
     }
 }
 
+# pylint: disable=line-too-long
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -96,6 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+# pylint: enable=line-too-long
 
 LANGUAGE_CODE = 'en-us'
 
@@ -118,4 +124,4 @@ STATICFILES_DIRS = [
     BASE_DIR / 'frontend/static',
     BASE_DIR / 'frontend/build',
     BASE_DIR / 'frontend/build/static',
-    ]
+]

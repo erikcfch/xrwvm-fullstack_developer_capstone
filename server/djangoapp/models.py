@@ -34,7 +34,8 @@ class CarModel(models.Model):
             MinValueValidator(2015)
         ]
     )
-    dealer_id = models.IntegerField()  # Assuming a simple integer ID for dealer
+    # Assuming a simple integer ID for dealer
+    dealer_id = models.IntegerField()
 
     def __str__(self):
         return f"{self.name} - {self.type} ({self.year})"
