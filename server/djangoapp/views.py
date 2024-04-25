@@ -1,13 +1,14 @@
-from django.contrib.auth.models import User
+import json
+import logging
+
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-import logging
-import json
 
 from .models import CarMake, CarModel
 from .populate import initiate
-from .restapis import analyze_review_sentiments, get_request, post_review
+from .restapis import analyze_review_sentiments, get_request
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
