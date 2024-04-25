@@ -1,70 +1,79 @@
 <html>
 <head>
-  <!-- Link the style sheet here -->
-  <link rel="stylesheet" href="/static/style.css">
-  <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <!-- Link the style sheet here -->
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
 </head>
 <div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Dealerships</h2>
+            <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                    data-bs-target="#navbarText" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link" href="/" style="font-size: larger;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about" style="font-size: larger;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact" style="font-size: larger;">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-        <h1>About Us</h1>
-        Welcome to Best Cars dealership, where luxury meets affordability. Explore our curated selection of domestic and imported vehicles, designed to exceed your expectations without breaking the bank.
+        <div class="banner" name="about-header">
+            <!-- Insert header information here -->
+            <h1>About Us</h1>
+            Welcome to Best Cars dealership, where luxury meets affordability. Explore our curated selection of domestic
+            and imported vehicles, designed to exceed your expectations without breaking the bank.
 
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person1.jpg" alt="Card image">
-        <div class="card-body">
-          <p class="title">Jasmine Patel</p>
-          <p>Financial Analyst</p>
-          <p class="card-text">Rev up your driving experience with our latest lineup of sleek sedans and powerful SUVs, designed to turn heads and conquer the road. From cutting-edge technology to unmatched safety features, find your perfect ride at our dealership today!</p>
         </div>
-      </div>
+        <div style="display: flex;flex-direction: row; margin:auto">
+            <div class="card" style="width: 30%;">
+                <img alt="Card image" class="card-img-top" src="/static/person1.jpg">
+                <div class="card-body">
+                    <p class="title">Jasmine Patel</p>
+                    <p>Financial Analyst</p>
+                    <p class="card-text">Rev up your driving experience with our latest lineup of sleek sedans and
+                        powerful SUVs, designed to turn heads and conquer the road. From cutting-edge technology to
+                        unmatched safety features, find your perfect ride at our dealership today!</p>
+                </div>
+            </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person2.jpg" alt="Card image">
-        <div class="card-body">
-          <p class="title">Elijah Thompson</p>
-          <p>Marketing Manager</p>
-          <p class="card-text">Discover the epitome of luxury and performance with our exclusive collection of high-end sports cars and premium vehicles. Elevate your driving passion to new heights with unparalleled craftsmanship and top-notch customer service at our dealership.</p>
-        </div>
-      </div>
+            <div class="card" style="width: 30%;">
+                <img alt="Card image" class="card-img-top" src="/static/person2.jpg">
+                <div class="card-body">
+                    <p class="title">Elijah Thompson</p>
+                    <p>Marketing Manager</p>
+                    <p class="card-text">Discover the epitome of luxury and performance with our exclusive collection of
+                        high-end sports cars and premium vehicles. Elevate your driving passion to new heights with
+                        unparalleled craftsmanship and top-notch customer service at our dealership.</p>
+                </div>
+            </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person3.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Maya Rodriguez</p>
-          <p>Software Engineer</p>
-          <p class="card-text">Unlock a world of versatility and reliability with our diverse range of family-friendly minivans and rugged trucks, tailored to suit every lifestyle and adventure. From spacious interiors to robust towing capabilities, explore your next automotive companion at our dealership and hit the road with confidence.</p>
+            <div class="card" style="width: 30%;">
+                <img alt="Card image" class="card-img-top" src="/static/person3.png">
+                <div class="card-body">
+                    <p class="title">Maya Rodriguez</p>
+                    <p>Software Engineer</p>
+                    <p class="card-text">Unlock a world of versatility and reliability with our diverse range of
+                        family-friendly minivans and rugged trucks, tailored to suit every lifestyle and adventure. From
+                        spacious interiors to robust towing capabilities, explore your next automotive companion at our
+                        dealership and hit the road with confidence.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    </div>
-    </div>
-    
+</div>
+
 </div>
 
 </html>

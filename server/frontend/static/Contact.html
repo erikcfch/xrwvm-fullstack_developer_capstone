@@ -1,68 +1,71 @@
 <html>
 <head>
-  <!-- Link the style sheet here -->
-  <link rel="stylesheet" href="/static/style.css">
-  <link rel="stylesheet" href="/static/bootstrap.min.css">
-  <style>
-    .contact-info {
-        border: 1px solid #ccc;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-    .content-box {
+    <!-- Link the style sheet here -->
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .contact-info {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content-box {
             border: 2px solid #ccc;
             border-radius: 20px;
             padding: 30px;
             margin-top: 20px;
         }
+
         .center-img {
             display: flex;
             justify-content: center;
         }
-</style>
+    </style>
 </head>
 <div>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-      <div class="container-fluid">
-        <h2 style="padding-right: 5%;">Dealerships</h2>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
-            </li>
-          </ul>
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Dealerships</h2>
+            <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                    data-bs-target="#navbarText" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link" href="/" style="font-size: larger;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about" style="font-size: larger;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contact" style="font-size: larger;">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     <div class="container mt-5">
         <h1 class="text-center mb-5">Contact Us</h1>
-    
+
         <div class="content-box">
-        <div class="row">
-            <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
                     <div class="center-img">
-                        <img src="/static/cars.jpeg" alt="Car Dealership Parking" class="img-fluid">
+                        <img alt="Car Dealership Parking" class="img-fluid" src="/static/cars.jpeg">
                     </div>
+                </div>
             </div>
-        </div>
-    
-        <div class="row">
-            <div class="col-md-6">
+
+            <div class="row">
+                <div class="col-md-6">
                     <div class="center-img">
-                        <img src="/static/contactus.png" alt="Contact Us" class="img-fluid">
+                        <img alt="Contact Us" class="img-fluid" src="/static/contactus.png">
                     </div>
-            </div>
-            <div class="col-md-6">
+                </div>
+                <div class="col-md-6">
                     <div class="contact-info">
                         <h4>Customer Service</h4>
                         <p>Email: <a href="mailto:customerservice@example.com">customerservice@example.com</a></p>
@@ -78,7 +81,7 @@
                         <p>Email: <a href="mailto:pr@example.com">pr@example.com</a></p>
                         <p>Phone: <a href="tel:+1122334455">+1 (122) 233-4455</a></p>
                     </div>
+                </div>
             </div>
         </div>
-        </div>
-</div>
+    </div>
