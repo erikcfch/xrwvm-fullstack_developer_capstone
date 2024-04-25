@@ -1,7 +1,7 @@
+/*jshint esversion: 6 */
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
-const { Int32 } = require('mongodb');
 
 const carSchema = new Schema({
     dealer_id: {

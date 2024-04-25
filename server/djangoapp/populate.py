@@ -1,5 +1,6 @@
 from .models import CarMake, CarModel
 
+
 def initiate():
     # Data for CarMake instances
     car_make_data = [
@@ -12,7 +13,8 @@ def initiate():
 
     # Create CarMake instances using list comprehension
     car_make_instances = [
-        CarMake.objects.create(name=make['name'], description=make['description'])
+        CarMake.objects.create(name=make['name'],
+                               description=make['description'])
         for make in car_make_data
     ]
 
